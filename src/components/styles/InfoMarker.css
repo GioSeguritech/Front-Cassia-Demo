@@ -1,0 +1,12 @@
+.rowInfo {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  height: 2rem;
+  /* background: #5d5c69; */
+  background-color: #43434d;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  width: 100%;
+}

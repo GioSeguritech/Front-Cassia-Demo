@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var aux = false;
+    var txt=""
+    console.log('funcionando')
+    d3.csv('https://raw.githubusercontent.com/plotly/datasets/c34aaa0b1b3cddad335173cb7bc0181897201ee6/2011_february_aa_flight_paths.csv', function(rows){
+    function unpack(rows, key) {
+// console.log(rows)
+return rows[key]
+        // return rows.map(function(row) { return row[key]; });
+    }
+
+    function getMaxOfArray(numArray) {
+        return Math.max.apply(null, numArray);
+    }
+
+    var data = [];
+    // console.log(rows)
+    var count = unpack(rows, 'cnt');
+    
+    var startLongitude = unpack(rows, 'start_lon');
+    var endLongitude = unpack(rows, 'end_lon');
+    var startLat = unpack(rows, 'start_lat');
+    var endLat = unpack(rows, 'end_lat');
+
+    // console.log(count,startLongitude,endLongitude,startLat,endLat)
+    for ( var i = 0 ; i < 1; i++ ) {
+        // var opacityValue = count[i]/getMaxOfArray(count);
+
+        var result = {
+            type: 'scattermapbox',
+            lon: [ startLongitude , endLongitude ],
+            lat: [ startLat , endLat ],
+            mode: 'lines',
+            line: {
+                width: 1,
+                color: 'red'
+            },
+            // opacity: opacityValue
+        };
+        txt+="{type: 'scattermapbox',lon: [ "+startLongitude+" , "+endLongitude+" ],lat: [ "+startLat+" , "+endLat+" ],mode: 'lines',line: {width: 1,color: 'red'},},"
+        console.log(result)
+        
+        // data.push(result);
+    };
+   
+});
+</script>

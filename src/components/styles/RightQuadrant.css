@@ -1,0 +1,108 @@
+.rowQuadrant
+{
+    
+    height: 100%;
+    
+}
+.rightQuadrant{
+    width: 25%;
+    display: block;
+    
+}
+.column{
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.columnSmall{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card{
+    position: relative;
+/* background-color: #363636; */
+background-color: #292929;
+width: 90%;
+height: 90%;
+box-shadow: 5px 5px 10px rgb(32, 32, 32);
+border-radius: 10px;
+
+}
+
+.menuSearch{
+    display: block;
+}
+.menuSearchColumn{
+    width: 100%;
+    height: 22%;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.127); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuSearchTitle{
+    height: 10%;
+}
+.menuActiontitle{
+    height: 14%;
+}
+.menuInfotitle{
+    height: 15%;
+}
+.menuInfo{
+    display: block;
+}
+.menuAction{
+    display: block;
+}
+.cardTitle{
+    color: white;
+font-size: medium;
+background: linear-gradient( #0b1e55, #004d79);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+}
+.cardTitleG{
+    color: #292929;
+    background: linear-gradient( #808080, #f9f9f9);
+    border-radius: unset;
+}
+.menuInfo{
+display: block;
+}
+.menuInfoData{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 85%;
+}
+.dataContent{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    border-left: 1px solid rgba(240, 248, 255, 0.167);
+}
+
+.menuActionData{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 86%;
+    grid-template-columns: 50% 50% ;
+    /* grid-template-rows: 50%; */
+}
+.menuActionCell{
+    border: 1px solid rgba(240, 248, 255, 0.105);
+}

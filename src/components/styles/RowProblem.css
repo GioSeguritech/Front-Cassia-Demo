@@ -1,0 +1,152 @@
+.problemCell{
+    position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+    /* border-left: 1px solid rgb(59, 59, 59); */
+    /* border-bottom: 1px solid rgb(59, 59, 59); */
+    color: white;
+    color: #d5d5d5;
+}
+.problemCell img{
+  /* background-color: red; */
+  position: relative;
+  /* animation: alertAnimation 0.5s infinite alternate; */
+}
+@keyframes alertAnimation {
+  0% {
+    opacity: 1;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(0.8);
+  }
+}
+
+.txtProblemCell{
+    text-align: center;
+position: relative;
+/* width: 100%; */
+/* height: auto; */
+word-break: break-all;
+/* margin: 0 0 1em 1em; */
+display: flex;
+font-size: x-small;
+    letter-spacing: 0.5px;
+justify-content: center;
+margin: 2%;
+}
+
+.sphere {
+    width: 15px;
+    height: 15px;
+    
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+  .s1{
+    /* background: radial-gradient(circle, lime 0%, rgb(45, 208, 45) 35%, rgb(1, 90, 1) 100%); */
+    
+    filter: brightness(120%);
+    border-radius: 100%;
+    width: 20%;
+    animation: alertAnimation 1s infinite alternate;
+    /* box-shadow: 0 0 5px lime; */
+  }
+  .s2{
+/* background: radial-gradient(circle, rgb(255, 255, 88) 0%, yellow 35%, rgb(154, 154, 4) 100%); */
+filter: brightness(120%);
+    border-radius: 5%;
+width: 25%;
+animation: alertAnimation 0.8s infinite alternate;
+  }
+  .s3{
+/* background: radial-gradient(circle, rgb(255, 200, 80) 0%, orange 35%, rgb(176, 114, 0) 100%); */
+filter: brightness(120%);
+    border-radius: 5%;
+/* box-shadow: 0 0 5px rgb(244, 179, 38); */
+animation: alertAnimation 0.6s infinite alternate;
+width: 35%;
+  }
+  .s4{
+    /* background: radial-gradient(circle, rgb(255, 103, 80) 0%, red 35%, rgb(176, 0, 0) 100%); */
+    filter: brightness(120%);
+    border-radius: 100%;
+    animation: alertAnimation 0.4s infinite alternate;
+    /* box-shadow: 0 0 5px rgb(255, 103, 80); */
+    width: 50%;
+  }
+  
+  /* .rowProblem{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    background-size: 400%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border-bottom: 1px solid #80808042;
+    border-top: 1px solid #80808042;
+    
+}
+  .rowProblem:hover{
+background-color: rgb(127, 127, 127);
+cursor: pointer;
+  } */
+  .rowProblem {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 2rem;
+    /* background: #5d5c69; */
+    background-color: #43434d;
+    background-size: 400%;
+    color: #fff;
+    border-bottom: 1px solid #80808038;
+    width: 100%;
+  }
+  .rowProblem:hover{
+    cursor: pointer;
+    
+  }
+  .rowProblem:hover::before {
+    transform: scaleX(1);
+    cursor: pointer;
+  }
+  
+  .rowProblem-hover {
+    position: relative;
+    z-index: 1;
+  }
+  .rowProblem::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    /* background: linear-gradient(
+      82.3deg,
+      rgba(252, 169, 169, 0.623) 10.8%,
+      rgba(212, 142, 142, 0.63) 94.3%
+    ); */
+    background: #a6a5b8a4;
+    transition: all 0.375s;
+  }
+  .PROBLEM{
+    background-color: #964f4f;
+  }
+  .RESOLVED{
+    background-color: #56815f;
+  }

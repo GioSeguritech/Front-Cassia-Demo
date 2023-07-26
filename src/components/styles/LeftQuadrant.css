@@ -1,0 +1,159 @@
+.rowQuadrant
+{
+   
+    height: 100%;
+   
+}
+.leftQuadrant{
+    width: 75%;
+}
+
+.columnLeft{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.columnMap{
+    height: 60%;
+}
+.columnAlert{
+    height: 40%;
+}
+.menuAlertTitle{
+    height: 10%;
+    max-height: 30px;
+}
+.cardTitleAlert{
+    /* background: linear-gradient( #4d0000, #8e0000); */
+    background: linear-gradient( #6c0101, #8e0000);
+}
+.menuAlertTabla{
+    /* padding: 1%; */
+    height: 90%;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.TableHeader{
+    height: 10%;
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(13, 13, 13, 0.45);
+    max-height: 25px;
+}
+.TableBody{
+    height: 90%;
+    position: absolute;
+    display: block;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(82, 82, 82, 0.347); */
+    /* background-color: rgba(70, 0, 0, 0.34); */
+    /* background-color: rgba(255, 179, 179, 0.5); */
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    
+}
+
+.headerCell{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 15%;
+    /* border-left: 1px solid white; */
+    color: white;
+    font-weight: bold;
+}
+.txtHeaderCell{
+    /* font-weight: unset; */
+    font-size: x-small;
+    letter-spacing: 1px;
+}
+.imgCardTitle{
+    position: absolute;
+height: 10%;
+width: 10%;
+left: 90%;
+display: flex;
+max-height: 25px;
+}
+.imgContent{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mapboxgl-control-container{
+    display: none !important;
+}
+.expandLogo{
+    position: relative;
+    height: 80%;
+}
+.expandLogo:hover{
+    height: 90%;
+    cursor: pointer;
+}
+/***************************MODAL***********************************/
+.ReactModal__Overlay {
+    background-color: #7b7b7b73   !important;
+}
+.ReactModal__Content {
+    padding: unset !important;
+    border: unset !important;
+    border-radius: 10px !important;
+    background-color: #292929 !important;
+}
+/************************************************************************ ESTILOS DE SCROLL BAR**************************************************/
+/********************   chrome  *********************/
+  /* Estilo del scrollbar */
+  .TableBody::-webkit-scrollbar {
+    width: 10px; /* Ancho del scrollbar */
+  }
+  
+  /* Estilo del thumb (la barra deslizante) */
+  .TableBody::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Color del thumb */
+    border-radius: 5px; /* Borde redondeado del thumb */
+  }
+  
+  /* Estilo del thumb al pasar el cursor sobre él */
+  .TableBody::-webkit-scrollbar-thumb:hover {
+    background-color: #ffffff; /* Color del thumb al pasar el cursor */
+  }
+  
+  /* Estilo de la pista (el área donde se desplaza el thumb) */
+  .TableBody::-webkit-scrollbar-track {
+    background-color: #f1f1f100; /* Color de la pista */
+  }
+/********************   firefox  *********************/
+  /* Estilo del thumb (la barra deslizante) */
+.TableBody::-moz-scrollbar-thumb {
+    background-color: #d51111; /* Color del thumb */
+    border-radius: 5px; /* Borde redondeado del thumb */
+  }
+  
+  /* Estilo del thumb al pasar el cursor sobre él */
+  .TableBody::-moz-scrollbar-thumb:hover {
+    background-color: #e20e0e; /* Color del thumb al pasar el cursor */
+  }
+  
+  /* Estilo de la pista (el área donde se desplaza el thumb) */
+  .TableBody::-moz-scrollbar-track {
+    background-color: #f1f1f1; /* Color de la pista */
+  }
+
+  .map-container {
+    width: 100%;
+    height: 100%;
+  }

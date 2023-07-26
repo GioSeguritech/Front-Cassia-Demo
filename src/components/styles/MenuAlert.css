@@ -1,0 +1,140 @@
+/***********expand row problem**************/
+
+.expandInfo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+  }
+  .contExpandInfo{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+  }
+  .rowExpand{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333237;
+    /* background: #80808047; */
+    height: 100%;
+    color: aliceblue;
+  }
+
+  .infoCont{
+    
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    border-right: 1px solid rgba(128, 128, 128, 0.363);
+    
+  }
+  .headContent{
+    
+    width: 10%;
+    height: 100%;
+    position: relative;
+    display: inline;
+    justify-content: center;
+    
+  }
+.rowHeadExpand{
+  background-color: transparent;
+    width: 100%;
+    height: 20%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+font-weight: bold;
+font-size: x-small;
+letter-spacing: 1px;
+border-bottom: 1px solid rgba(128, 128, 128, 0.678);
+word-wrap: anywhere;
+text-align: center;
+
+}
+.detailContent{
+  width: 90%;
+  height: 100%;
+  position: relative;
+  display: inline;
+  justify-content: center;
+  
+}
+.rowDetailExpand{
+  width: 100%;
+  height: 20%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+font-size: x-small;
+letter-spacing: 1px;
+border-bottom: 1px solid rgba(128, 128, 128, 0.568);
+background: #acacac1c;
+}
+.rowcontActions{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.actionsTitle{
+  color: white;
+font-size: small;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lineTitle{
+  width: 90%;
+position: absolute;
+left: 5%;
+top: 8%;
+color: #505050a3;
+height: 1px;
+background: #3b3b3ba3;
+}
+
+/**************** menu expcept*****************/
+.exceptCont{
+  position: relative;
+  display: block; 
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  /* background-color: aliceblue; */
+}
+.formCont{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 86%;
+  border-radius: 0px 0px 10px 10px;
+  justify-content: center;
+  align-items: top;
+}
+.formCompact{
+  position: relative;
+  display: block;
+  width: 80%;
+  height:90%;
+}
+.formColumn{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height:40px;
+  margin-top: 5%;
+}

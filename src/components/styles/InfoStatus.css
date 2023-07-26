@@ -1,0 +1,76 @@
+.dataContentColumn{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.compactData{
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+}
+.InfoData{
+    /* border-color: #088eee; */
+    
+width: 100%;
+height: 100%;
+border-top: none;
+border-left: none;
+border-radius: 5px;
+background-color: transparent;
+font-size: x-large;
+
+letter-spacing: 1px;
+ text-align: center;
+}
+.labelData{
+    /* font-weight: bold; */
+    position: absolute;
+    top: -10%;
+    font-size: x-large;
+    /* color: #088eee; */
+   
+}
+
+.inpUP{
+    border-color: #1fee08;
+    color: #1fee08;
+}
+.lblUP{
+    color:  #19f600;
+}
+
+.inpDOWN{
+    border-color: #ee0808;
+    color: #ee0808;
+}
+.lblDOWN{
+    color:  #ee0808;
+}
+
+.inpDOWN3{
+    border-color: #ee5c08;
+    color: #ee5c08;
+}
+.lblDOWN3{
+    color:  #ee5c08;
+}
+.inpDOWN2{
+    border-color: #ee9d08;
+    color: #ee9d08;
+}
+.lblDOWN2{
+    color:  #ee9d08;
+}
+.inpDOWN1{
+    border-color: #ffee00;
+    color: #ffee00;
+}
+.lblDOWN1{
+    color:  #ffee00;
+}

@@ -1,0 +1,192 @@
+.contPingModal{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.titlePinglModal{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+.lineTitlePing{
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 72%;
+    color: #505050a3;
+    height: 1px;
+    background: #3b3b3ba3;
+}
+.contAnimationPingModal{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.contActionsPingModal{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+}
+.constImg{
+    position: relative;
+    width: 25%;
+    height: 80%;
+    display: block;
+}
+.contAnimation{
+    position: relative;
+width: 35%;
+height: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.divImgPing{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divtextPing{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    color: #d5d5d5;
+}
+.icon-ping{
+    width: 30%;
+}
+.msgPing{
+    color: #34db42;
+    font-size: medium;
+}
+.msgErrorPing{
+    color: #db3434;
+    font-size: medium;
+}
+/**********************Animation*****************************/
+.dots-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: #bbfcb3;
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+  
+  .dot:last-child {
+    margin-right: 0;
+  }
+  
+  .dot:nth-child(1) {
+    animation-delay: -0.3s;
+  }
+  
+  .dot:nth-child(2) {
+    animation-delay: -0.1s;
+  }
+  
+  .dot:nth-child(3) {
+    animation-delay: 0.1s;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.8);
+      background-color: #b3fcb3;
+      box-shadow: 0 0 0 0 rgba(184, 252, 178, 0.7);
+    }
+    25% {
+        transform: scale(0.8);
+        background-color: #96d39e;
+        box-shadow: 0 0 0 0 rgba(152, 201, 142, 0.7);
+      }
+    50% {
+      transform: scale(1.2);
+      background-color: #6cfb67;
+      box-shadow: 0 0 0 10px rgba(178, 212, 252, 0);
+    }
+    75% {
+        transform: scale(0.8);
+        background-color: #96d39e;
+        box-shadow: 0 0 0 0 rgba(152, 201, 142, 0.7);
+      }
+    100% {
+      transform: scale(0.8);
+      background-color: #b3fcbd;
+      box-shadow: 0 0 0 0 rgba(190, 252, 178, 0.7);
+    }
+  }
+
+  /***************************/
+  .loading-wave {
+    width: 100%;
+height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .loading-bar {
+    width: 5px;
+    height: 10px;
+    margin: 10px;
+    background-color: #34db42;
+    border-radius: 2px;
+    animation: loading-wave-animation 1s ease-in-out infinite;
+  }
+  
+  .loading-bar:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .loading-bar:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  
+  .loading-bar:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  
+  @keyframes loading-wave-animation {
+    0% {
+      height: 10px;
+    }
+    25% {
+        height: 15px;
+      }
+    
+    50% {
+      height: 30px;
+    }
+    75% {
+        height: 15px;
+      }
+    100% {
+      height: 10px;
+    }
+  }
+  
