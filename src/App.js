@@ -14,7 +14,7 @@ const [zoom,setZoom]=useState(6)
 const [latitudes,setLatitudes]=useState([])
 const [longitudes,setLongitudes]=useState([])
 const [locations,setLocations]=useState([])
-const [token,setToken]=useState("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqdWFuLm1hcmNpYWwiLCJleHAiOjE2ODk5ODA4Mzh9.KzvEqLR1otC4Hq02Y_e139_BfG1Z5WofzG5P6F0UG7s")
+const [token,setToken]=useState("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqdWFuLm1hcmNpYWwiLCJleHAiOjE2OTA2MzA5MTh9.Cx8RP1WJ4OzSFmXgI9RUsiury2kSPua0tgUARHlhXTg")
 const [data,setData]=useState([]);
 const [loading,setLoading]=useState(true);
 const [error,setError]=useState(null);
@@ -34,13 +34,13 @@ function search_problems(){
 setDataProblems({data:dataProblems.data,loading:true,error:dataProblems.error})
   const fetchData = async () => {
     try {
-      const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqdWFuLm1hcmNpYWwiLCJleHAiOjE2ODk5ODA4Mzh9.KzvEqLR1otC4Hq02Y_e139_BfG1Z5WofzG5P6F0UG7s'; // Reemplaza con tu token de autenticación
+      const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqdWFuLm1hcmNpYWwiLCJleHAiOjE2OTA2MzA5MTh9.Cx8RP1WJ4OzSFmXgI9RUsiury2kSPua0tgUARHlhXTg'; // Reemplaza con tu token de autenticación
       const devicefilter=ubicacion.dispId!==0?'?tech_host_type='+ubicacion.dispId:''
   const subtypefilter=ubicacion.templateId!==0?'subtype='+ubicacion.templateId:''
   let andAux=(devicefilter!=='' )?'&':'?'
         andAux=(subtypefilter!=='')?andAux:''
-  console.log('http://localhost:8000/api/v1/zabbix/problems/'+ubicacion.groupid+''+devicefilter+andAux+subtypefilter)
-      const response = await fetch('http://localhost:8000/api/v1/zabbix/problems/'+ubicacion.groupid+''+devicefilter+andAux+subtypefilter, {                 
+  console.log('http://172.18.200.14:8000/api/v1/zabbix/problems/'+ubicacion.groupid+''+devicefilter+andAux+subtypefilter)
+      const response = await fetch('http://172.18.200.14:8000/api/v1/zabbix/problems/'+ubicacion.groupid+''+devicefilter+andAux+subtypefilter, {                 
                           headers: {
                             'Content-Type': 'application/json',
                             Authorization: `Bearer ${token}`,
@@ -82,14 +82,14 @@ function search_devices(){
     
     const fetchData = async () => {
       try {
-        const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqdWFuLm1hcmNpYWwiLCJleHAiOjE2ODk5ODA4Mzh9.KzvEqLR1otC4Hq02Y_e139_BfG1Z5WofzG5P6F0UG7s'; // Reemplaza con tu token de autenticación
-        // const response = await fetch('http://localhost:8000/api/v1/zabbix/db/hosts/relations/'+ubicacion.groupid, {
+        const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqdWFuLm1hcmNpYWwiLCJleHAiOjE2OTA2MzA5MTh9.Cx8RP1WJ4OzSFmXgI9RUsiury2kSPua0tgUARHlhXTg'; // Reemplaza con tu token de autenticación
+        // const response = await fetch('http://172.18.200.14:8000/api/v1/zabbix/db/hosts/relations/'+ubicacion.groupid, {
           const devicefilter=ubicacion.dispId!==0?'?dispId='+ubicacion.dispId:''
     const subtypefilter=ubicacion.templateId!==0?'subtype_id='+ubicacion.templateId:''
     let andAux=(devicefilter!=='' )?'&':'?'
           andAux=(subtypefilter!=='')?andAux:''
-    console.log('http://localhost:8000/api/v1/zabbix/hosts/'+ubicacion.groupid+''+devicefilter+andAux+subtypefilter)
-          const response = await fetch('http://localhost:8000/api/v1/zabbix/hosts/'+ubicacion.groupid+''+devicefilter+andAux+subtypefilter, {                 
+    console.log('http://172.18.200.14:8000/api/v1/zabbix/hosts/'+ubicacion.groupid+''+devicefilter+andAux+subtypefilter)
+          const response = await fetch('http://172.18.200.14:8000/api/v1/zabbix/hosts/'+ubicacion.groupid+''+devicefilter+andAux+subtypefilter, {                 
                             headers: {
                               'Content-Type': 'application/json',
                               Authorization: `Bearer ${token}`,

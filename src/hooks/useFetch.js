@@ -11,10 +11,10 @@ export function useFetch(url,body,token,method){
       setLoading(true)
       const fetchData = async () => {
         
-      console.log('http://localhost:8000/api/v1/zabbix/db/'+url+"/"+body)
+      console.log('http://172.18.200.14:8000/api/v1/zabbix/db/'+url+"/"+body)
         try {
-          const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqdWFuLm1hcmNpYWwiLCJleHAiOjE2ODk5ODA4Mzh9.KzvEqLR1otC4Hq02Y_e139_BfG1Z5WofzG5P6F0UG7s'; // Reemplaza con tu token de autenticación
-          const response = await fetch('http://localhost:8000/api/v1/zabbix/'+url+"/"+body, {
+          const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqdWFuLm1hcmNpYWwiLCJleHAiOjE2OTA2MzA5MTh9.Cx8RP1WJ4OzSFmXgI9RUsiury2kSPua0tgUARHlhXTg'; // Reemplaza con tu token de autenticación
+          const response = await fetch('http://172.18.200.14:8000/api/v1/zabbix/'+url+"/"+body, {
             method: method,  
           headers: {
               'Content-Type': 'application/json',
