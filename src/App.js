@@ -34,7 +34,7 @@ function search_problems(){
 setDataProblems({data:dataProblems.data,loading:true,error:dataProblems.error})
   const fetchData = async () => {
     try {
-      const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqdWFuLm1hcmNpYWwiLCJleHAiOjE2OTA2MzA5MTh9.Cx8RP1WJ4OzSFmXgI9RUsiury2kSPua0tgUARHlhXTg'; // Reemplaza con tu token de autenticación
+      const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqdWFuLm1hcmNpYWwiLCJleHAiOjE2OTEwOTAwMjV9.kYp1NQFEmRNk-rtdroTQHD5WfPAqxwgCvz-4kam9qjs'; // Reemplaza con tu token de autenticación
       const devicefilter=ubicacion.dispId!==0?'?tech_host_type='+ubicacion.dispId:''
   const subtypefilter=ubicacion.templateId!==0?'subtype='+ubicacion.templateId:''
   let andAux=(devicefilter!=='' )?'&':'?'
@@ -82,7 +82,7 @@ function search_devices(){
     
     const fetchData = async () => {
       try {
-        const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqdWFuLm1hcmNpYWwiLCJleHAiOjE2OTA2MzA5MTh9.Cx8RP1WJ4OzSFmXgI9RUsiury2kSPua0tgUARHlhXTg'; // Reemplaza con tu token de autenticación
+        const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqdWFuLm1hcmNpYWwiLCJleHAiOjE2OTEwOTAwMjV9.kYp1NQFEmRNk-rtdroTQHD5WfPAqxwgCvz-4kam9qjs'; // Reemplaza con tu token de autenticación
         // const response = await fetch('http://172.18.200.14:8000/api/v1/zabbix/db/hosts/relations/'+ubicacion.groupid, {
           const devicefilter=ubicacion.dispId!==0?'?dispId='+ubicacion.dispId:''
     const subtypefilter=ubicacion.templateId!==0?'subtype_id='+ubicacion.templateId:''
