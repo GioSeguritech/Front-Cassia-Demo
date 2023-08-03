@@ -427,6 +427,9 @@
     "http-proxy-agent": "^4.0.1",
     "http-proxy-middleware": "^2.0.6",
     "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
     "https-proxy-agent": "^5.0.1",
     "human-signals": "^2.1.0",
     "iconv-lite": "^0.6.3",
@@ -1021,6 +1024,7 @@
     "update-browserslist-db": "^1.0.11",
     "update-diff": "^1.1.0",
     "uri-js": "^4.4.1",
+    "url": "^0.11.0",
     "url-parse": "^1.5.10",
     "use-isomorphic-layout-effect": "^1.1.2",
     "util": "^0.12.5",
@@ -1093,7 +1097,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
   },
   "author": "",
   "license": "ISC"
